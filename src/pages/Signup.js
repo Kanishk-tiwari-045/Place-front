@@ -28,8 +28,7 @@ const Signin = () => {
           <input style={{ borderRadius: '20px' }} type="email" placeholder="Email" />
           <input style={{ borderRadius: '20px' }} type="password" placeholder="Password" />
           <div className="custom1" style={{ height: '22px' }}></div>
-          {/* Replace button with Link */}
-          <Link to="/home">Sign Up</Link>
+          <button>Sign Up</button>
         </form>
       </div>
       <div className="form-container sign-in-container">
