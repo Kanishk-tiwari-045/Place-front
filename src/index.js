@@ -1,10 +1,12 @@
+// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // Import your main App component here
+import './index.css'; // Make sure this path is correct
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') // This is where your React app will be rendered in the HTML document
+  document.getElementById('root')
 );

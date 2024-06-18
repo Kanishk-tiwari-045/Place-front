@@ -1,13 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Signup from './pages/Signup';
-import HeroSection from './pages/Hero';
+import Signup from './components/Signup'
+import './App.css';
+import { SlideTabsExample } from "./components/Navbar";
+
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/home" element={<SlideTabsExample />} />
         <Route path="/" element={<Signup />} />
-        <Route path="/hero" element={<HeroSection />} />
       </Routes>
     </BrowserRouter>
   );

@@ -17,6 +17,7 @@ body {
 
 h1 {
   font-weight: bold;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -83,6 +84,7 @@ form {
 input {
   background-color: #eee;
   border: none;
+  font-size: 13px;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
