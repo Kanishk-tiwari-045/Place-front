@@ -1,17 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Signup from './components/Signup'
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home';
 import './App.css';
-import { SlideTabsExample } from "./components/Navbar";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={<SlideTabsExample />} />
-        <Route path="/" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <div className="app">
+        <Home />
+      </div>
+    </Router>
   );
 };
 
