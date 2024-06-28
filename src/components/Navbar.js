@@ -37,8 +37,8 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
 
   return (
     <div className="relative z-50">
-      <div className="bg-neutral-100 py-4 fixed top-0 left-0 right-0">
-        <div className="relative mx-auto w-full max-w-screen-lg flex justify-between items-center">
+      <div className="bg-neutral-100 py-4 fixed top-0 left-0 right-0 w-full">
+        <div className="w-full flex justify-between items-center px-4">
           <ul
             onMouseLeave={() => {
               if (!isSignupOpen) {
@@ -48,10 +48,19 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
                 }));
               }
             }}
-            className="relative flex rounded-full border-2 border-purple-600 bg-transparent p-1"
-            style={{ width: "calc(100% - 400px)" }} // Adjust width as per your design
+            className="relative flex rounded-full border-2 border-purple-600 bg-transparent p-1 w-full items-center"
           >
-            <div className="flex justify-center items-center">
+            <div className="flex items-center mr-6">
+              <lord-icon
+                src="https://cdn.lordicon.com/wmwqvixz.json"
+                trigger="hover"
+                style={{ width: '40px', height: '40px', marginLeft: '10px' }}
+              ></lord-icon>
+              <div className="ml-4 font-bold text-lg">
+                AppName
+              </div>
+            </div>
+            <div className="flex justify-center items-center flex-grow">
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Home</Tab>
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Pricing</Tab>
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Features</Tab>
@@ -67,15 +76,22 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
             <motion.input
               type="text"
               placeholder="Search"
-              className="border border-gray-300 rounded-md py-1 px-3 mr-4"
+              className="border border-gray-300 w-80 rounded-md py-1 px-3 mr-6"
               whileHover={{ scale: 1.05 }} // Example animation on hover
             />
-            <div className="ml-4">
+            <div className="ml-1 mr-2">
+              <lord-icon
+                src="https://cdn.lordicon.com/ojnjgkun.json"
+                trigger="hover"
+                style={{ width: '40px', height: '40px' }}>
+              </lord-icon>
+            </div>
+            <div className="ml-1 mr-2">
               <lord-icon
                 src="https://cdn.lordicon.com/lznlxwtc.json"
                 trigger="hover"
-                style={{ width: '40px', height: '40px'}}
-              />
+                style={{ width: '40px', height: '40px' }}
+              ></lord-icon>
             </div>
           </ul>
         </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from './Features';
-import JobsCards from './JobsCards';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
 import Signup from './Signup';
@@ -25,9 +24,6 @@ const Home = () => {
         </section>
         <section id="features">
           <Features />
-        </section>
-        <section id="jobs">
-          <JobsCards />
         </section>
         <section id="dashboard">
           <Dashboard />
