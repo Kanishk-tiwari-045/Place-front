@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from './Features';
-import Footer from './Footer';
-import Dashboard from './Dashboard';
 import Signup from './Signup';
 import { motion } from 'framer-motion';
 
@@ -17,22 +15,22 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      {/* Navbar Component */}
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} onSigninClick={toggleSignup} />
+
       <main>
-        <section id="home">
+        {/* Hero Section */}
+        <section id="home" className="section">
           <Hero />
         </section>
-        <section id="features">
+
+        {/* Features Section */}
+        <section className="section">
           <Features />
         </section>
-        <section id="dashboard">
-          <Dashboard />
-        </section>
-        <section id="footer">
-          <Footer />
-        </section>
       </main>
-      <Footer />
+
+      {/* Signup Modal */}
       {isSignupOpen && (
         <motion.div
           initial={{ opacity: 0 }}

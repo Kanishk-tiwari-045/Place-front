@@ -37,7 +37,7 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
 
   return (
     <div className="relative z-50">
-      <div className="bg-neutral-100 py-4 fixed top-0 left-0 right-0 w-full">
+      <div className="bg-gray-100 py-4 fixed top-0 left-0 right-0 w-full">
         <div className="w-full flex justify-between items-center px-4">
           <ul
             onMouseLeave={() => {
@@ -48,7 +48,7 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
                 }));
               }
             }}
-            className="relative flex rounded-full border-2 border-purple-600 bg-transparent p-1 w-full items-center"
+            className="relative flex rounded-full border-4 border-purple-600 bg-transparent p-1 w-full items-center"
           >
             <div className="flex items-center mr-6">
               <lord-icon
