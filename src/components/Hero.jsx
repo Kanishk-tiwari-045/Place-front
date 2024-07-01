@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import './Hero.css';
-import image1 from './image1.png';
-import image2 from './image2.png';
-import image3 from './image3.png';
-import image4 from './image4.png';
+import '../styles/Hero.css';
+import image1 from '../assets/image1.png';
+import image2 from '../assets/image2.png';
+import image3 from '../assets/image3.png';
+import image4 from '../assets/image4.png';
 
 const Hero = () => {
   const [bubbles, setBubbles] = useState([]);
@@ -90,7 +90,13 @@ const Hero = () => {
       >
         <motion.h1 className="hero-title">Welcome to My Website</motion.h1>
         <motion.p className="hero-subtitle">Engage with various good mindsets</motion.p>
-        <button className="hero-button">Get Started</button>
+        <button class="btn-36">
+          <span class="new">Signup</span>
+          <div class="old">
+            <span>Get-started</span>
+            <span aria-hidden>Get-started</span>
+          </div>
+        </button>
       </motion.div>
     </div>
   );

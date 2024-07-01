@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './Features.css'; // Styling for the component
-import image1 from './image1.png';
-import image2 from './image2.png';
-import image3 from './image3.png';
-import image4 from './image4.png';
-import image5 from './image5.png';
+import '../styles/Features.css'; // Styling for the component
+import image1 from '../assets/image1.png';
+import image2 from '../assets/image2.png';
+import image3 from '../assets/image3.png';
+import image4 from '../assets/image4.png';
+import image5 from '../assets/image5.png';
 import { motion } from 'framer-motion'; // For animations
 
 const Features = () => {
@@ -49,7 +49,7 @@ const Features = () => {
       imageUrl: image1,
     },
     {
-        title: 'WorthIt Opportunities',
+        title: 'Worth-it Opportunities',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
         imageUrl: image5,
@@ -102,8 +102,9 @@ const Features = () => {
           </div>
           <div className="card-back">
             <p>{feature.description}</p>
-            <a href="#">Read More</a>
+            <button class="btn-5"><span>Read More</span></button>
           </div>
+          
         </motion.div>
       ))}
     </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Signup from './Signup';
+import Signup from './Signup'; // Correct import for the Signup component
 
 const Navbar = ({ setActiveTab, onSigninClick }) => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
@@ -64,12 +64,7 @@ const Navbar = ({ setActiveTab, onSigninClick }) => {
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Home</Tab>
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Pricing</Tab>
               <Tab setPosition={setPosition} setActiveTab={setActiveTab}>Features</Tab>
-              <li
-                onMouseEnter={handleSigninHover}
-                className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs font-medium text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
-              >
-                Signin
-              </li>
+              <Tab setPosition={setPosition} setActiveTab={toggleSignup}>Signup</Tab>
             </div>
             <Cursor position={position} />
             {/* Search bar */}
