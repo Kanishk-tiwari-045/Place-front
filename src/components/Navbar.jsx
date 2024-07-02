@@ -157,7 +157,11 @@ const Navbar = ({ setActiveTab }) => {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3 }}
               className="bg-transparent rounded-lg p-6 z-50"
-              style={{ minWidth: '300px' }}
+              style={{
+                maxHeight: 'calc(100vh - 80px)', 
+                overflow: 'auto',
+                marginTop: '80px',
+              }}
               ref={jobFormRef}
               onClick={(e) => e.stopPropagation()}
             >
@@ -198,7 +202,6 @@ const Navbar = ({ setActiveTab }) => {
 
 const Tab = ({ children, setPosition, setActiveTab }) => {
   const ref = useRef(null);
-
   return (
     <li
       ref={ref}

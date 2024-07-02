@@ -287,7 +287,7 @@ const JobForm = ({ onClose }) => {
               />
             </Grid>
             <Grid item xs={12} style={{ textAlign: 'center' }}>
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" sx={{ backgroundColor: 'purple', '&:hover': { backgroundColor: 'purple' } }}>
                 Post Job
               </Button>
             </Grid>
